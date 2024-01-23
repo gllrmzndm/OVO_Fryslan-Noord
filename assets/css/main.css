@@ -24,7 +24,7 @@
   --color-primary: #1264a5;
   --color-secondary: #f85a40;
   --color-jelles: #dc3376;
-  --color-darkmode: #47494b;
+  --color-darkmode: #464646;
   --color-darkmode-accent: #4f4f4f;
 }
 
@@ -73,6 +73,7 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+
 
 .sections-bg {
   background-color: #f6f6f6;
@@ -355,16 +356,6 @@ section {
 # Google Search
 --------------------------------------------------------------*/
 
-input[type=text] {
-  outline: none;
-  border: none;
-  width: 100%;
-  font-family: var(--font-secondary);
-  font-weight: 700;
-  font-size: 2rem;
-  height: 4vh;
-}
-
 @media (prefers-color-scheme: dark) {
   input[type=text] {
     outline: none;
@@ -373,11 +364,26 @@ input[type=text] {
     font-family: var(--font-secondary);
     font-weight: 700;
     background-color: (var(--color-darkmode-accent));
+    color: #ffffff;
+  }
+
+  .clients {
+    background-color: var(--color-darkmode-accent);
   }
 }
 
 #gform {
   text-align: center;
+}
+
+input[type=text] {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 2rem;
+  height: 4vh;
 }
 
 @media (min-width: 1280px) {
@@ -981,13 +987,6 @@ input[type=text] {
 # Our Services Section
 --------------------------------------------------------------*/
 
-@media (prefers-color-scheme: dark) {
-  .services {
-    padding: 60px 0;
-    background-color: var(--color-darkmode);
-  }
-}
-
 .services .service-item {
   padding: 40px;
   background: #fff;
@@ -1015,7 +1014,7 @@ input[type=text] {
   content: "";
   height: 100%;
   width: 100%;
-  background: #eeeeee;
+  background: var(--color-jelles);
   border-radius: 50px;
   z-index: 1;
   top: 10px;
@@ -1044,20 +1043,39 @@ input[type=text] {
 .services .service-item .readmore {
   margin-top: 15px;
   display: inline-block;
+  color: var(--color-jelles);
+}
+
+.services .service-item .readmore:hover {
   color: var(--color-primary);
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: var(--color-primary);
 }
 
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
 }
 
+
 @media (prefers-color-scheme: dark) {
   .services .service-item {
     background-color: var(--color-darkmode-accent);
+  }
+
+  .services .service-item h3 {
+    color: var(--color-default-dark);
+  }
+
+  .services {
+    padding: 60px 0;
+    background-color: var(--color-darkmode);
+  }
+
+  h3,
+  p {
+    color: white;
   }
 }
 
@@ -1689,11 +1707,11 @@ input[type=text] {
   padding-right: 10px;
   font-size: 20px;
   line-height: 0;
-  color: var(--color-primary);
+  color: var(--color-default-dark);
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
+  color: var(--color-default-dark);
   border-bottom: 0;
   box-shadow: none;
 }
@@ -1710,6 +1728,32 @@ input[type=text] {
   border-radius: 10px;
   background: #fff;
   box-shadow: none;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .faq .accordion-body {
+    background-color: var(--color-darkmode-accent);
+    color: var(--color-default-dark);
+  }
+
+  .faq .accordion-button {
+    background-color: var(--color-darkmode-accent);
+    color: var(--color-default-dark);
+  }
+
+  .faq .accordion-collapse {
+    background-color: var(--color-darkmode-accent);
+    color: var(--color-default-dark);
+  }
+
+  .faq .content h3 {
+    color: var(--color-default-dark);
+  }
+
+  .faq .content p {
+    color: var(--color-default-dark);
+  }
 }
 
 /*--------------------------------------------------------------
