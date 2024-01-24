@@ -380,6 +380,16 @@ section {
   text-align: center;
 }
 
+#gform::placeholder {
+  /* color: var(--color-jelles); */
+}
+
+#gform:focus-within {
+  border: solid;
+  border-width: 0.3rem;
+  border-color: var(--color-jelles);
+}
+
 input[type=text] {
   outline: none;
   border: none;
@@ -1666,6 +1676,7 @@ input[type=text] {
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
+  text-align: center;
 }
 
 .faq .content h4 {
@@ -1677,6 +1688,7 @@ input[type=text] {
 .faq .content p {
   font-size: 15px;
   color: #6c757d;
+  text-align: center;
 }
 
 .faq .accordion-item {
