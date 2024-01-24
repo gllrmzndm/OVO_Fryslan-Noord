@@ -44,15 +44,18 @@
     color: var(--color-default-dark);
     background-color: var(--color-darkmode);
   }
+
+  a {
+    color: #000;
+  }
 }
 
 a {
-  color: var(--color-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #00b6a1;
+  color: var(--color-jelles);
   text-decoration: none;
 }
 
@@ -1711,7 +1714,6 @@ input[type=text] {
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-default-dark);
   border-bottom: 0;
   box-shadow: none;
 }
@@ -1733,7 +1735,7 @@ input[type=text] {
 @media (prefers-color-scheme: dark) {
 
   .faq .accordion-body {
-    background-color: var(--color-darkmode-accent);
+    background-color: var(--color-darkmode-accordaccent);
     color: var(--color-default-dark);
   }
 
@@ -1752,6 +1754,10 @@ input[type=text] {
   }
 
   .faq .content p {
+    color: var(--color-default-dark);
+  }
+
+  .faq .content> {
     color: var(--color-default-dark);
   }
 }
