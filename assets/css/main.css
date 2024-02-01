@@ -1750,7 +1750,7 @@ input[type=text] {
 
   .faq .accordion-body {
     background-color: var(--color-darkmode-accordaccent);
-    color: var(--color-default-dark);
+    color: var(--color-default);
   }
 
   .faq .accordion-button {
@@ -1761,6 +1761,14 @@ input[type=text] {
   .faq .accordion-collapse {
     background-color: var(--color-darkmode-accent);
     color: var(--color-default-dark);
+  }
+
+  .faq .accordion-body>a {
+    color: var(--color-jelles)
+  }
+
+  .faq .accordion-body>a:hover {
+    color: var(--color-default-dark)
   }
 
   .faq .content h3 {
