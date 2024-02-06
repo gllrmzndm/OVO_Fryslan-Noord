@@ -379,6 +379,7 @@ section {
 #gform {
   height: 4rem;
   text-align: center;
+
 }
 
 #gform::placeholder {
@@ -386,9 +387,12 @@ section {
 }
 
 #gform:focus-within {
+  position: relative;
+  z-index: 10;
   border: solid;
   border-width: 0.3rem;
   border-color: var(--color-jelles);
+
 }
 
 input[type=text] {
@@ -1732,6 +1736,10 @@ input[type=text] {
   box-shadow: none;
 }
 
+.faq .accordion-button:hover {
+  color: var(--color-jelles);
+}
+
 .faq .accordion-button:after {
   position: absolute;
   right: 20px;
@@ -1761,6 +1769,10 @@ input[type=text] {
   .faq .accordion-collapse {
     background-color: var(--color-darkmode-accent);
     color: var(--color-default-dark);
+  }
+
+  .faq .accordion-button:hover {
+    color: var(--color-jelles);
   }
 
   .faq .accordion-body>a {
@@ -2004,8 +2016,8 @@ input[type=text] {
 .hero {
   width: 100%;
   position: relative;
-  background: var(--color-primary);
   padding: 60px 0 0 0;
+  background: var(--color-primary);
 }
 
 @media (min-width: 1365px) {
